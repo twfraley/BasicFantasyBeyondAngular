@@ -15,6 +15,9 @@ import { ItemDetailComponent } from './components/item/item-detail/item-detail.c
 import { SpellAddComponent } from './components/spell/spell-add/spell-add.component';
 import { SpellEditComponent } from './components/spell/spell-edit/spell-edit.component';
 import { SpellDetailComponent } from './components/spell/spell-detail/spell-detail.component';
+import { HomeComponent } from './home/home.component';
+import { CharacterDetailComponent } from './components/character/character-detail/character-detail.component';
+import { CharacterListComponent } from './components/character/character-list/character-list.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { SpellDetailComponent } from './components/spell/spell-detail/spell-deta
     ItemDetailComponent,
     SpellAddComponent,
     SpellEditComponent,
-    SpellDetailComponent
+    SpellDetailComponent,
+    HomeComponent,
+    CharacterDetailComponent,
+    CharacterListComponent
   ],
   imports: [
     BrowserModule,
