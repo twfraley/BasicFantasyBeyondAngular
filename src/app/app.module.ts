@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { CharacterAddComponent } from './components/character/character-add/character-add.component';
 import { CharacterEditComponent } from './components/character/character-edit/character-edit.component';
@@ -39,7 +40,8 @@ import { CharacterListComponent } from './components/character/character-list/ch
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
