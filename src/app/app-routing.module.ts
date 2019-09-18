@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { CharacterSheetAddComponent } from './components/character-sheet/character-sheet-add/character-sheet-add.component';
 import { CharacterAddComponent } from './components/character/character-add/character-add.component';
 import { CharacterDetailComponent } from './components/character/character-detail/character-detail.component';
