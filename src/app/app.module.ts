@@ -19,6 +19,7 @@ import { SpellDetailComponent } from './components/spell/spell-detail/spell-deta
 import { HomeComponent } from './components/home/home.component';
 import { CharacterDetailComponent } from './components/character/character-detail/character-detail.component';
 import { CharacterListComponent } from './components/character/character-list/character-list.component';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CharacterListComponent } from './components/character/character-list/ch
     SpellDetailComponent,
     HomeComponent,
     CharacterDetailComponent,
-    CharacterListComponent
+    CharacterListComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
