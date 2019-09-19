@@ -20,6 +20,8 @@ import { HomeComponent } from './components/home/home.component';
 import { CharacterDetailComponent } from './components/character/character-detail/character-detail.component';
 import { CharacterListComponent } from './components/character/character-list/character-list.component';
 import { NavComponent } from './components/nav/nav.component';
+import { ItemListComponent } from './components/item/item-list/item-list.component';
+import { SpellListComponent } from './components/spell/spell-list/spell-list.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { NavComponent } from './components/nav/nav.component';
     HomeComponent,
     CharacterDetailComponent,
     CharacterListComponent,
-    NavComponent
+    NavComponent,
+    ItemListComponent,
+    SpellListComponent
   ],
   imports: [
     BrowserModule,

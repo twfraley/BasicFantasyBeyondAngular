@@ -14,6 +14,8 @@ import { ItemEditComponent } from './components/item/item-edit/item-edit.compone
 import { SpellAddComponent } from './components/spell/spell-add/spell-add.component';
 import { SpellDetailComponent } from './components/spell/spell-detail/spell-detail.component';
 import { SpellEditComponent } from './components/spell/spell-edit/spell-edit.component';
+import { ItemListComponent } from './components/item/item-list/item-list.component';
+import { SpellListComponent } from './components/spell/spell-list/spell-list.component';
 
 
 const routes: Routes = [
@@ -25,7 +27,7 @@ const routes: Routes = [
       {path: 'edit/:id', component: CharacterEditComponent},
       {path: 'detail/:id', component: CharacterDetailComponent},
       {path: 'list', component: CharacterListComponent},
-      {path: '', redirectTo: '/list', pathMatch: 'full'},
+      {path: '', redirectTo: 'list', pathMatch: 'full'},
     ]
   },
   {
@@ -36,16 +38,20 @@ const routes: Routes = [
   },
   {
     path: 'item', children: [
+      {path: 'list', component: ItemListComponent},
       {path: 'create', component: ItemAddComponent},
       {path: 'detail/:id', component: ItemDetailComponent},
       {path: 'edit/:id', component: ItemEditComponent},
+      {path: '', redirectTo: 'list', pathMatch: 'full'},
     ]
   },
   {
     path: 'spell', children: [
+      {path: 'list', component: SpellListComponent},
       {path: 'create', component: SpellAddComponent},
       {path: 'detail/:id', component: SpellDetailComponent},
       {path: 'edit/:id', component: SpellEditComponent},
+      {path: '', redirectTo: 'list', pathMatch: 'full'},
     ]
   },
 ];
